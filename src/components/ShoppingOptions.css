@@ -1,0 +1,43 @@
+.shopping-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .option {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+  }
+  
+  .option h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .banner {
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+  
+  .amount {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .term {
+    font-size: 0.8em;
+  }
+  
+  button {
+    background-color: #70c48e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
