@@ -9,15 +9,15 @@ import {
 const initialState = {
   caseInfo: {},
   // assignmentInfo: [],
-  // selectedLevel: "s",
+  selectedLevel: "",
   // customerDetails: {},
 };
 
 export function appReducer(state = initialState, action) {
-  console.log(action.payload,'reducer')
+  // console.log(action.payload,'reducer')
   switch (action.type) {
-    // case SET_SELECTED_LEVEL:
-      // return { ...state, selectedLevel: action.payload };
+    case SET_SELECTED_LEVEL:
+      return { ...state, selectedLevel: action.payload };
     // case SET_CUSTOMER_DETAILS:
       // return { ...state, customerDetails: action.payload };
     case SET_CASE_INFO:
