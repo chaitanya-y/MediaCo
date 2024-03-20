@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "b1f94dca-d134-4384-ba92-cda737aea94a",
+		"name": "MediaCo-SPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5813380"
+	},
+	"item": [
+		{
+			"name": "customeraddress3",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://pu5wmxvn.pegace.net/prweb/PRRestService/oauth2/v1/token",
+						"grant_type": "client_credentials",
+						"authUrl": "",
+						"clientSecret": "5D2C9894CB88B7E508B97CC13676817A",
+						"clientId": "12795431273994330660",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "\"20240313T072434.521 GMT\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":{\"Street\":\"building no 6, 1st main 1st cross, jcr layout\",\"City\":\"Bengaluru\",\"State\":\"\",\"PostalCode\":\"560103\",\"PhoneNumber\":\"+10000000000\"},\"pageInstructions\":[]}"
+				},
+				"url": {
+					"raw": "{{infinity}}PRAuth/app/MediaCo/api/application/v2/assignments/ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP/actions/CustomerAddress?viewType=form",
+					"host": [
+						"{{infinity}}PRAuth"
+					],
+					"path": [
+						"app",
+						"MediaCo",
+						"api",
+						"application",
+						"v2",
+						"assignments",
+						"ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP",
+						"actions",
+						"CustomerAddress"
+					],
+					"query": [
+						{
+							"key": "viewType",
+							"value": "form"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cases1",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://60vjl1ry.pegace.net/prweb/PRRestService/oauth2/v1/token",
+						"clientSecret": "5D7A66EEF3BF736A91314AA8046E8310",
+						"clientId": "48349004502385887248",
+						"addTokenTo": "header",
+						"grant_type": "client_credentials",
+						"client_authentication": "header",
+						"authUrl": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Cookie",
+						"value": "{{sessionId}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"caseTypeID\": \"DIXL-MediaCo-Work-NewService\",\r\n \"content\": {\"Package\": \"Silver\"},\r\n  \"processID\": \"pyStartCase\"\r\n  }"
+				},
+				"url": {
+					"raw": "{{infinity}}app/MediaCo/api/application/v2/cases?viewType=page",
+					"host": [
+						"{{infinity}}app"
+					],
+					"path": [
+						"MediaCo",
+						"api",
+						"application",
+						"v2",
+						"cases"
+					],
+					"query": [
+						{
+							"key": "viewType",
+							"value": "page"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerinfo2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"clientSecret": "85D5AE9F40E11A1E718230AB74350B5A",
+						"clientId": "10121808295028368664",
+						"accessTokenUrl": "https://pu5wmxvn.pegace.net/prweb/PRRestService/oauth2/v1/token",
+						"grant_type": "client_credentials",
+						"client_authentication": "header",
+						"authUrl": "",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "\"20240215T071854.215 GMT\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":{\"FirstName\":\"Chaitana\",\"LastName\":\"Lakshman\",\"Email\":\"dsf@d.f\",\"MiddleName\":\"\",\"Suffix\":\"\"},\"pageInstructions\":[]}"
+				},
+				"url": {
+					"raw": "{{infinity}}PRAuth/app/MediaCo/api/application/v2/assignments/ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP/actions/CustomerInfo?viewType=form",
+					"host": [
+						"{{infinity}}PRAuth"
+					],
+					"path": [
+						"app",
+						"MediaCo",
+						"api",
+						"application",
+						"v2",
+						"assignments",
+						"ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP",
+						"actions",
+						"CustomerInfo"
+					],
+					"query": [
+						{
+							"key": "viewType",
+							"value": "form"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "serviceDate3",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"clientSecret": "7B5608D51D0318F230E6FD2C5AF5EFD7",
+						"addTokenTo": "header",
+						"clientId": "10121808295028368664",
+						"accessTokenUrl": "https://pu5wmxvn.pegace.net/prweb/PRRestService/oauth2/v1/token",
+						"grant_type": "client_credentials",
+						"client_authentication": "header",
+						"authUrl": ""
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "\"20240313T072442.988 GMT\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":{\"ServiceDate\":\"2024-03-15\"},\"pageInstructions\":[]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{infinity}}app/MediaCo/api/application/v2/assignments/ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP/actions/ServiceDate?viewType=form",
+					"host": [
+						"{{infinity}}app"
+					],
+					"path": [
+						"MediaCo",
+						"api",
+						"application",
+						"v2",
+						"assignments",
+						"ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP",
+						"actions",
+						"ServiceDate"
+					],
+					"query": [
+						{
+							"key": "viewType",
+							"value": "form"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RequestedService4",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"clientSecret": "7B5608D51D0318F230E6FD2C5AF5EFD7",
+						"addTokenTo": "header",
+						"clientId": "10121808295028368664",
+						"accessTokenUrl": "https://pu5wmxvn.pegace.net/prweb/PRRestService/oauth2/v1/token",
+						"grant_type": "client_credentials",
+						"client_authentication": "header",
+						"authUrl": ""
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "\"20240215T070540.330 GMT\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":{},\"pageInstructions\":[]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{infinity}}PRAuth/app/MediaCo/api/application/v2/assignments/ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP/actions/RequestedService?viewType=form",
+					"host": [
+						"{{infinity}}PRAuth"
+					],
+					"path": [
+						"app",
+						"MediaCo",
+						"api",
+						"application",
+						"v2",
+						"assignments",
+						"ASSIGN-WORKLIST%20DIXL-MEDIACO-WORK%20{{caseId}}!MASHUP",
+						"actions",
+						"RequestedService"
+					],
+					"query": [
+						{
+							"key": "viewType",
+							"value": "form"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
